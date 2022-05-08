@@ -1,0 +1,14 @@
+api_platform:
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    patch_formats:
+        json: ['application/merge-patch+json']
+    swagger:
+        versions: [3]
+    defaults:
+        # To enable or disable pagination for all resource collections.
+        pagination_enabled: false
+        pagination_items_per_page: 5
+        pagination_client_enabled: true
+        pagination_client_items_per_page: true
+
